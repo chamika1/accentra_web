@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accentra - Google AI Pro & Veo 3 Services in Sri Lanka</title>
+    <meta name="description" content="Get Google's latest AI tools in Sri Lanka with Accentra. We offer the Veo 3 cinematic video generator, Gemini 2.5 Pro, 2TB storage, and more. Start your AI journey today!">
+    <meta name="keywords" content="Google AI, Veo 3, Gemini Pro, AI video generation, Sri Lanka, Accentra, AI services, Google AI package, video editing, content creation">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://accentra.is-best.net/">
+    <meta property="og:title" content="Accentra - Google AI Pro & Veo 3 Services in Sri Lanka">
+    <meta property="og:description" content="Unlock the power of Google's latest AI tools, including the Veo 3 video generator and Gemini 2.5 Pro, right here in Sri Lanka.">
+    <meta property="og:image" content="https://accentra.is-best.net/images.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://accentra.is-best.net/">
+    <meta property="twitter:title" content="Accentra - Google AI Pro & Veo 3 Services in Sri Lanka">
+    <meta property="twitter:description" content="Unlock the power of Google's latest AI tools, including the Veo 3 video generator and Gemini 2.5 Pro, right here in Sri Lanka.">
+    <meta property="twitter:image" content="https://accentra.is-best.net/images.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "AI Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Accentra"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Sri Lanka"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Google AI Plans",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "1 Month Plan"
+            },
+            "price": "800",
+            "priceCurrency": "LKR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "12 Months Plan"
+            },
+            "price": "3000",
+            "priceCurrency": "LKR"
+          }
+        ]
+      },
+      "name": "Google AI Pro Experience",
+      "description": "Get Google's latest AI tools in Sri Lanka with Accentra. We offer the Veo 3 cinematic video generator, Gemini 2.5 Pro, 2TB storage, and more."
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark-1: #121212;
+            --bg-dark-2: #1e1e2f;
+            --primary-accent: #00c6ff;
+            --secondary-accent: #92fe9d;
+            --text-light: #e0e0e0;
+            --text-dark: #a0a0a0;
+            --card-bg: linear-gradient(145deg, #2a2a3f, #1e1e2f);
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 100%);
+            color: var(--text-light);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 20px 0;
+            transition: background 0.4s ease, padding 0.4s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(18, 18, 18, 0.85);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: font-size 0.4s ease;
+        }
+
+        nav.scrolled .logo {
+            font-size: 28px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            position: relative;
+            z-index: 1;
+            transition: color 0.4s ease;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+            border-radius: 25px;
+            transform: scale(0);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .nav-links a:hover::before {
+            transform: scale(1);
+        }
+
+        .nav-links a:hover {
+            color: var(--bg-dark-1);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px 0;
+            background: var(--text-light);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 140px 0 80px;
+            text-align: center;
+        }
+
+        .hero-content {
+            animation: fadeInUp 1.2s cubic-bezier(0.39, 0.58, 0.57, 1) both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 15px var(--primary-accent), 0 0 25px var(--primary-accent); }
+            to { text-shadow: 0 0 30px var(--secondary-accent), 0 0 45px var(--secondary-accent); }
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            color: var(--text-dark);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+            color: #111;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 12px 35px rgba(0, 198, 255, 0.25);
+            border: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 18px 45px rgba(146, 254, 157, 0.3);
+        }
+
+        /* Google Logo Colors */
+        .g-blue { color: #4285F4; }
+        .g-red { color: #DB4437; }
+        .g-yellow { color: #F4B400; }
+        .g-green { color: #0F9D58; }
+
+        .video-wrapper {
+            margin: 50px auto;
+            max-width: 850px;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 25px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--border-color);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 120px 0;
+            background: var(--bg-dark-1);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 70px;
+            background: linear-gradient(45deg, var(--text-light), var(--primary-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0, 198, 255, 0.2);
+            border-color: var(--primary-accent);
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            color: #111;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+
+        .feature-card p {
+            color: var(--text-dark);
+            font-size: 1rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 120px 0;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            border: 2px solid var(--border-color);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .pricing-card.popular {
+            border-color: var(--primary-accent);
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 198, 255, 0.3);
+        }
+        
+        .pricing-card.popular::before {
+            content: 'Best Deal!';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(45deg, var(--primary-accent), var(--secondary-accent));
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .pricing-card h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary-accent);
+            margin-bottom: 15px;
+        }
+
+        .price-note {
+            color: var(--text-dark);
+            font-size: 1rem;
+            margin-bottom: 35px;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 40px;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .features-list li {
+            padding: 10px 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-accent);
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+            background: var(--bg-dark-1);
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: var(--card-bg);
+            padding: 30px 40px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 198, 255, 0.2);
+            border-color: var(--primary-accent);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--primary-accent);
+        }
+
+        .contact-details h4 {
+            color: var(--text-light);
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-details p, .contact-details a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-details a:hover {
+            color: var(--primary-accent);
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a0a0a;
+            padding: 50px 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav .container {
+                justify-content: center;
+                position: relative;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background: rgba(18, 18, 18, 0.95);
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                transform: translateY(-10px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .hamburger {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+            .hero h1 { font-size: 2.8rem; }
+            .hero p { font-size: 1.1rem; }
+            .section-title { font-size: 2.5rem; }
+            .pricing-cards { grid-template-columns: 1fr; }
+            .contact-info { flex-direction: column; align-items: center; }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.39, 0.58, 0.57, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Floating particles effect */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -10;
+        }
+
+        .particle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: particle-float 10s infinite linear;
+        }
+        
+        .particle:nth-child(odd) {
+            background: var(--primary-accent);
+        }
+        .particle:nth-child(even) {
+            background: var(--secondary-accent);
+            width: 7px;
+            height: 7px;
+        }
+
+        @keyframes particle-float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10%, 90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-10vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">ACCENTRA</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🌟 <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span> AI Pro Experience</h1>
+                <p>Veo 3 Video Generation සහ Complete AI Package එකක් ඔබේ අතේ!</p>
+                <a href="#contact" class="cta-button">අදම ඇණවුම් කරන්න</a>
+                <div class="video-wrapper fade-in">
+                    <iframe src="https://www.youtube.com/embed/lUphCxz33gQ?rel=0&loop=1&playlist=lUphCxz33gQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">🔥 Veo 3 කියන්නේ මොකද්ද?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Veo 3 Private Account</h3>
+                    <p>Google එකේ අලුත්ම cinematic AI video generator! TikToks, Ads, Reels, Trailers හදන්න effortless.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Gemini 2.5 Pro</h3>
+                    <p>Advanced Writing, Coding, සහ Research capabilities සහිත premium AI assistant.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎥</div>
+                    <h3>Flow AI Filmmaker</h3>
+                    <p>Professional-grade video creation tools ඔබේ creative projects වලට.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>Whisk - Image to Video</h3>
+                    <p>ඕනෑම image එකක් high-quality video එකක් බවට convert කරන්න.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📚</div>
+                    <h3>NotebookLM Research</h3>
+                    <p>Advanced research assistant ඔබේ academic සහ professional work වලට.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">☁️</div>
+                    <h3>2TB Storage</h3>
+                    <p>Google Drive සහ Gmail storage space 2TB + 1000 AI Credits monthly.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 15px; border: 1px solid #00d4ff;">
+                <h3 style="color: #00d4ff; margin-bottom: 15px;">📊 Performance Facts</h3>
+                <p style="font-size: 1.2rem; color: #ffffff;">🎞️ මාසෙකට videos 140ක් හදන්න පුළුවන් (duration: 8 seconds each)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">💰 මිල ගණන්</h2>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card fade-in">
+                    <h3>1 Month Plan</h3>
+                    <div class="price">Rs. 800</div>
+                    <div class="price-note">Monthly Payment</div>
+                    <ul class="features-list">
+                        <li>Veo 3 Private Account</li>
+                        <li>Gemini 2.5 Pro</li>
+                        <li>Flow AI Filmmaker</li>
+                        <li>Whisk Image to Video</li>
+                        <li>NotebookLM Research</li>
+                        <li>2TB Google Drive Storage</li>
+                        <li>1000 AI Credits</li>
+                        <li>140 Videos per month</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Select Plan</a>
+                </div>
+
+                <div class="pricing-card popular fade-in">
+                    <h3>12 Months Plan</h3>
+                    <div class="price">Rs. 3,000</div>
+                    <div class="price-note">Save Rs. 6,600!</div>
+                    <ul class="features-list">
+                        <li>Veo 3 Private Account</li>
+                        <li>Gemini 2.5 Pro</li>
+                        <li>Flow AI Filmmaker</li>
+                        <li>Whisk Image to Video</li>
+                        <li>NotebookLM Research</li>
+                        <li>Gemini in Chrome (US only)</li>
+                        <li>2TB Google Drive Storage</li>
+                        <li>1000 AI Credits monthly</li>
+                        <li>140 Videos per month</li>
+                        <li>Priority Support</li>
+                        <li style="color: #00d4ff; font-weight: bold;">Unlimited Veo 3 Video Generation Tool Free</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Best Deal!</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 25px; background: linear-gradient(135deg, #00d4ff20, #0099cc20); border-radius: 15px; border: 1px solid #00d4ff;">
+                <p style="font-size: 1.1rem; color: #ffffff; font-weight: bold;">🚀 මේ වගේ Veo 3 එක ඇතුළත් package එකක් වෙන තැනක නෑ!</p>
+                <p style="color: #cccccc; margin-top: 10px;">අඩුම මිලට, හොඳම AI tools එකතුවක් – ඇත්තටම worth it!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">📲 අදම සම්බන්ධ වන්න</h2>
+            <p style="font-size: 1.2rem; color: #cccccc; max-width: 600px; margin: 0 auto;">ඔබේ AI journey එක අදම ආරම්භ කරන්න! අපි ඔබට complete setup සහ support එක provide කරනවා.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-details">
+                        <h4>WhatsApp</h4>
+                        <p>+94 75 150 3281</p>
+                    </div>
+                </div>
+
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">📘</div>
+                    <div class="contact-details">
+                        <h4>Facebook Page</h4>
+                        <p><a href="https://web.facebook.com/profile.php?id=100093044573434" target="_blank" style="color: #00d4ff; text-decoration: underline;">Accentra</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">⚡</div>
+                    <div class="contact-details">
+                        <h4>Response Time</h4>
+                        <p>Instant Reply</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <a href="https://wa.me/94751503281" class="cta-button" style="font-size: 1.3rem; padding: 20px 50px;">
+                    WhatsApp එකෙන් Order කරන්න 🚀
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Accentra. All rights reserved. Powered by AI Innovation.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            
+            setInterval(() => {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
+                
+                particlesContainer.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 10000);
+            }, 300);
+        }
+
+        // Fade in animation on scroll
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        function handleSmoothScrolling() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Dynamic navbar background
+        function handleNavbarScroll() {
+            const nav = document.querySelector('nav');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+        }
+
+        // Initialize all functions
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            handleScrollAnimations();
+            handleSmoothScrolling();
+            handleNavbarScroll();
+
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        });
+
+        // Add click effects to buttons
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('cta-button')) {
+                const ripple = document.createElement('span');
+                const rect = e.target.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    left: ${x}px;
+                    top: ${y}px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: ripple 0.6s linear;
+                    pointer-events: none;
+                `;
+                
+                e.target.appendChild(ripple);
+                
+                setTimeout(() => ripple.remove(), 600);
+            }
+        });
+
+        // Add ripple animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
